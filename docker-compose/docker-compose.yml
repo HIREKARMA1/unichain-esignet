@@ -47,6 +47,7 @@ services:
       - SPRING_CACHE_TYPE=redis
       - SPRING_REDIS_HOST=redis-server
       - SPRING_REDIS_PASSWORD=
+      - MOSIP_ESIGNET_TOKEN_ENDPOINT=http://host.docker.internal:8088/v1/esignet/oauth/v2/token
     depends_on:
       - database
       - mock-identity-system
