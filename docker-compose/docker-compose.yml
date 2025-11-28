@@ -28,6 +28,7 @@ services:
       - SPRING_DATASOURCE_USERNAME=postgres
       - SPRING_DATASOURCE_PASSWORD=postgres
       - MOSIP_MOCK_IDA_KYC_TRANSACTION_TIMEOUT_SECS=900
+      - MOSIP_MOCK_IDA_KYC_PSUT_FIELD=individualId
     depends_on:
       - database
 
